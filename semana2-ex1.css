@@ -1,0 +1,26 @@
+.header {
+    background-color: #2afd77;
+}
+.menu{
+    background-color: #feda31;
+}
+    
+.content1 {
+    background-color: pink;
+}
+
+.content2 {
+    background-color: blue;
+}
+
+.image {
+    background-color: red;
+}
+
+.extra {
+    background-color: green;
+}
+
+.footer {
+    background-color: purple;
+}
