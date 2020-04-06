@@ -13,10 +13,40 @@
 
 console.log("Bem vindo ao jogo de Blackjack")
 
-if(confirm("Deseja jogar uma partida?")) {
+let cartasDoPC="Cartas - Maquina ", CartasDoUsuario= "Cartas - Jogador ", pontosDoPC=0, PontosDoUsuario=0;
 
+if(confirm("Deseja jogar uma partida?")) {
+    for(let i=0; i<2; i++){
+
+    let carta = comprarCarta(); 
     
-}else{
+    cartasDoPC+=carta.texto+ " "; 
+    pontosDoPC+=carta.valor;
+    
+    carta = comprarCarta();
+
+    CartasDoUsuario+=carta.texto+ " "; 
+    PontosDoUsuario+=carta.valor;
+
+}    
+    console.log(cartasDoPC+ " Pontuação "+pontosDoPC);
+    
+
+    console.log(CartasDoUsuario+" Pontuação "+PontosDoUsuario);
+   
+if((PontosDoUsuario > pontosDoPC) && PontosDoUsuario <= 21 || (pontosDoPC > 21 && PontosDoUsuario <=21)){
+    console.log("O usuário venceu!")
+
+}else if((pontosDoPC > PontosDoUsuario) && pontosDoPC <= 21 || (PontosDoUsuario > 21 && pontosDoPC<=21)){
+    console.log("A máquina venceu!")
+
+    }
+    else{
+        console.log("Empate")
+    }
+
+}
+else{
     console.log("O jogo acabou!")
 
 }
