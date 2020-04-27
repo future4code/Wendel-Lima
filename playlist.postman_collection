@@ -1,0 +1,9 @@
+{
+	"info": {
+		"_postman_id": "4f2624c8-a2d1-45ae-a558-87129da81ebe",
+		"name": "get All Playlists",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [],
+	"protocolProfileBehavior": {}
+}
