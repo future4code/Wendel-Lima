@@ -1,0 +1,18 @@
+{
+  "name": "aula_date_timestamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node build/index.js",
+    "first": "tsc && node build/exercicio1.js",
+    "second": "tsc && node build/exercicio2.js",
+    "third": "tsc && node build/exercicio3.js"
+  },
+  "author": "Wendel de Lima",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.27.0"
+  }
+}
